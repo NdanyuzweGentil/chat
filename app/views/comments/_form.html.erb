@@ -14,14 +14,18 @@
       <% end %>
       
       <div class="field ">
-        
+         <div class="row">
+              <div class="col-sm-5">
         <p class="emoji-picker-container">
         <%= form.text_area :message,  class: "form-control emoji-picker-container", data: { emojiable: true } %>
         </p>
       </div>
-      
-      <div class="actions">
-        <center><%= form.submit 'send message', class: "btn btn-success"%></center>
+      <center>
+      <div class ="send" class="actions">
+        <%= form.submit 'send message', class: "btn btn-primary"%>
+      </div>
+</center>
+      </div>
       </div>
     <% end %>
     
